@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>WELCOME </h2>
+            <h3>TO</h3>
+            <h1>INSTAGRAM    PROFILE</h1>
+        
+            <input type="text" placeholder="Username" id="user"><br><br>
+            <button onclick="profile()">Check</button><br><br><hr>
+            <a href="" id ="ans"></a>
+        </div>
+    </div>
+    <script>
+        let input = document.getElementById('user');
+        let ans = document.getElementById('ans');
+        function profile(){
+            ans.href="http://www.instagram.com/" + input.value;
+            document.getElementById('ans').innerHTML= "View Profile";
+            
+        }
+    </script>
+</body>
+</html>
